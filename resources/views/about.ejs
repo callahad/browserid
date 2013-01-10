@@ -4,8 +4,65 @@
 
 <div id="content" class="display_always">
     <div class="about">
-        <section class="simple-signon">
-            <h2 class="title"><%- gettext('Simplified sign-on.') %></h2>
+        <section class="auth-system">
+            <h2 class="title"><%- gettext('Registration and sign-on, simplified.') %></h2>
+            <article class="blurb half first">
+                <p><%- gettext('Persona is the easiest way for <strong>developers</strong> to have their own best-in-class user registration and sign-in system, with minimal set-up and maintenance effort.') %></p>
+            </article>
+            <article class="blurb half">
+                <p><%- gettext('As a Persona <strong>user</strong> you are in full control of your online identity. You only need one password to sign into any Persona-enabled site, and your data is securely stored.') %></p>
+            </article>
+        </section>
+
+        <section class="for-developers">
+            <h2 class="title"><%- gettext('For Developers') %></h2>
+            <article class="blurb">
+                <div class="info first">
+                    <h1><%- gettext('No More Passwords') %></h1>
+                    <p><%- gettext('Storing passwords securely is a hassle, and storing them at all is a liability: a compromised database could cause considerable damage to your business. Even if you do everything right, you can\'t prevent your users from re-using passwords on other, less secure sites.') %></p>
+                    <p><%- gettext('Persona lets you avoid these risks by replacing passwords with temporary, site-specific tokens backed by strong, public key cryptography. Because the tokens are temporary, you can discard them after verification, leaving nothing sensitive sitting in a database. Because the tokens are site-specific, a compromise at another site won\'t put your users at risk. In a nutshell: Persona lets you "<code>ALTER TABLE accounts DROP COLUMN passwords;</code>".') %></p>
+                </div>
+                <div class="graphic">
+                    <!-- FIXME -->
+                    <img src="<%- cachify('/pages/i/one-password-graphic.png') %>" alt="<%- gettext('One password to rule them all.') %>">
+                </div>
+            </article>
+            <article class="blurb">
+                <div class="graphic first">
+                    <!-- FIXME -->
+                    <img src="<%- cachify('/pages/i/one-password-graphic.png') %>" alt="<%- gettext('One password to rule them all.') %>">
+                </div>
+                <div class="info">
+                    <h1><%- gettext('No lock-in') %></h1>
+                    <p><%- gettext('Persona doesn\'t lock you in. Instead of an opaque, hashed key, you receive each user\'s actual email address. Persona puts you in control of your relationship with your users.') %></p>
+                    <p><%- gettext('You can replace Persona with your own login system at any time. No strings attached.') %></p>
+                </div>
+            </article>
+            <article class="blurb">
+                <div class="info first">
+                    <h1><%- gettext('Better Conversion') %></h1>
+                    <p><%- gettext('Persona provides a best in class user experience: with just two clicks, a Persona user can sign into a new site, without ever needing to deal with password management or cumbersome account creation forms. By lowering friction, Persona leads to better visitor sign-up conversion than alternative systems.') %></p>
+                </div>
+                <div class="graphic">
+                    <!-- FIXME -->
+                    <img src="<%- cachify('/pages/i/one-password-graphic.png') %>" alt="<%- gettext('One password to rule them all.') %>">
+                </div>
+            </article>
+
+            <article class="blurb">
+                <div class="graphic first">
+                    <!-- FIXME -->
+                    <img src="<%- cachify('/pages/i/one-password-graphic.png') %>" alt="<%- gettext('One password to rule them all.') %>">
+                </div>
+                <div class="info">
+                    <h1><%- gettext('Easy and Free') %></h1>
+                    <p><%- gettext('Persona is the easiest way to add a secure user sign-up and log-in system to your site: complete integrations rarely take more than a few lines of code. You can be done in a single afternoon! Plus, Persona is open source, decentralized, and completely free to use.') %></p>
+                </div>
+            </article>
+        </section>
+
+        <section class="for-users">
+            <h2 class="title"><%- gettext('For Users') %></h2>
             <article class="blurb">
                 <div class="info first">
                     <h1><%- gettext('Persona replaces multiple passwords') %></h1>
@@ -30,7 +87,7 @@
 
                 <div class="info">
                     <h1><%- gettext('Persona is flexible') %></h1>
-                    <p><%- gettext('Within Persona, your identity is your email address. You can use as many email addresses as you want, but you still only need one password.') %></p>
+                    <p><%- gettext('Within Persona, your identity is your email address. You can use as many email addresses as you want, and you never need more than one new password.') %></p>
                 </div>
             </article>
         </section>
@@ -40,11 +97,11 @@
 
             <article class="blurb half first" style="min-height: 195px; ">
                 <h1><%- gettext('Persona is proudly non-profit for you') %></h1>
-                <p><%- gettext('Persona is developed by Mozilla, a not-for-profit company trusted throughout the Web community. Our goal is to create technologies that balance an open Web platform with people\'s privacy.') %></p>
+                <p><%- gettext('Persona is developed by Mozilla, a not-for-profit company trusted throughout the Web community. Our goal is to create technologies that support the open Web and respect people\'s privacy.') %></p>
             </article>
             <article class="blurb half">
                 <h1><%- gettext('Persona preserves your privacy') %></h1>
-                <p><%- gettext('Persona does not track your activity around the Web. It creates a wall between signing you in and what you do once you\'re there. The history of what sites you visit is stored only on your own computer.') %></p>
+                <p><%- gettext('Unlike other password-free login systems, Persona doesn\'t let your email or social provider track your activity around the web.') %></p>
             </article>
         </section>
 
